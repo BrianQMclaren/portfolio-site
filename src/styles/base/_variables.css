@@ -1,0 +1,18 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+
+// Font Stacks
+$font-family--primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050px;
+
+@function g-context($g-col-width, $g-col-count, $g-gutter-width) {
+  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count -1));
+  @return $g-context;
+}
