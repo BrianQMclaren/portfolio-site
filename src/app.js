@@ -1,6 +1,5 @@
-import './styles.css';
-import Header from './scripts/modules/Header';
+import styles from './scss/main.scss';
 
-new Header({
-  target: document.getElementsByTagName('header')[0],
-}).run();
+import mobileMenu from './scripts/modules/mobileMenu';
+
+const menu = new mobileMenu();

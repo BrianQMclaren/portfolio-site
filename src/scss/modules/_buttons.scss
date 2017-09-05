@@ -1,0 +1,22 @@
+//Button Styles
+
+.btn {
+	@include bg-colors($ui-colors);
+}
+
+.btn--warning,
+.btn--info {
+	margin-bottom: 30px;
+}
+
+[class^="btn--"] {
+	@extend %center-align;
+	@extend %btn;
+	@media (min-width: 1px) and (max-width: 768px) {
+		width: 100%;
+	}
+	@media (min-width: 769px) {
+		width: auto;
+		display: inline-block;
+	}
+}

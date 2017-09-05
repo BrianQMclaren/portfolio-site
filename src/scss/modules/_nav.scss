@@ -1,0 +1,41 @@
+//Navigation styles
+
+.navbar {
+	height: em(70px);
+	color: $text;
+	border-bottom: 1px solid $black;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	// transition: all 250ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	// left: 0;
+	// z-index: 1;
+	// z-index: 9999;
+	// overflow: hidden;
+	// background: rgba(255, 255, 255, 0);
+}
+
+.primary {
+	@include e(nav) {
+		@extend %primary-nav-disp;
+		@include mq(small) {
+			padding-top: em(120px);
+		}
+		@include mq(medium) {
+			display: inline-block;
+			padding-top: 0;
+		}
+		a {
+			@extend %primary-nav-link;
+			@include mq(medium) {
+				font-size: em(20px);
+				padding: em(8px, 12px);
+				display: inline-block;
+			}
+
+			&:hover {
+				@extend %primary-nav-on;
+			}
+		}
+	}
+}

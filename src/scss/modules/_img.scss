@@ -1,0 +1,42 @@
+//Img Styles
+
+.responsive-image {
+	width: 100%;
+	background-size: 100% 100%;
+	height: auto;
+}
+
+/* Retina display */
+// @media screen and (min-width: 1024px){
+//     .responsive-image{
+//
+//     }
+// }
+//
+// /* Desktop */
+// @media screen and (min-width: 980px) and (max-width: 1024px){
+//     .responsive-image{
+//
+//     }
+// }
+//
+// /* Tablet */
+// @media screen and (min-width: 760px) and (max-width: 980px){
+//     .responsive-image{
+//
+//     }
+// }
+//
+// /* Mobile HD */
+// @media screen and (min-width: 350px) and (max-width: 760px){
+//     .responsive-image{
+//
+//     }
+// }
+//
+// /* Mobile LD */
+// @media screen and (max-width: 350px){
+//     .responsive-image{
+//
+//     }
+// }

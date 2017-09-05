@@ -1,0 +1,51 @@
+// =============================
+// Extends
+// =============================
+
+// Nav Items
+
+%primary-nav-disp {
+	display: block;
+	text-align: center;
+}
+
+%primary-nav-link {
+	font-size: em(22px);
+	color: $white;
+}
+
+%primary-nav-on {
+	color: $white;
+}
+
+// Button styles
+
+%btn {
+	color: $white;
+	text-transform: uppercase;
+	display: block;
+	margin: 5px;
+	padding: 15px 30px;
+	border: 0;
+	border-radius: $br--default;
+	font-size: em(14px);
+	font-weight: $font-weight--medium;
+	&:hover {
+		opacity: .75;
+	}
+	&:active {
+		opacity: initial;
+	}
+}
+
+// Icon styles
+
+%svg--ui {
+	cursor: pointer;
+	height: em(32px);
+	width: em(32px);
+	fill: $mustard;
+	&:hover {
+		fill: $mustard;
+	}
+}
