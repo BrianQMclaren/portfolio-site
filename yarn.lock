@@ -2092,6 +2092,12 @@ fstream@^1.0.0, fstream@^1.0.10, fstream@^1.0.2:
     mkdirp ">=0.5 0"
     rimraf "2"
 
+fullpage.js@^2.9.4:
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-2.9.4.tgz#b07de9c146c95c042d28a31e934b8faf334fa0e9"
+  dependencies:
+    jquery ">=1.6.0"
+
 function-bind@^1.0.2:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
@@ -2673,7 +2679,7 @@ jest-docblock@^20.0.1:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-20.0.3.tgz#17bea984342cc33d83c50fbe1545ea0efaa44712"
 
-jquery@^3.2.1:
+jquery@>=1.6.0, jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 

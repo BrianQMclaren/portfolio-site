@@ -6,16 +6,45 @@
 
 %primary-nav-disp {
 	display: block;
-	text-align: center;
 }
 
 %primary-nav-link {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: 16px;
 	font-size: em(22px);
-	color: $white;
+	letter-spacing: 0.05em;
+}
+
+%primary-nav-a {
+	color: palette(grey, xx-light);
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--bold;
 }
 
 %primary-nav-on {
-	color: $white;
+	color: $text;
+	transform: scale(1.1);
+}
+
+// Headlines
+
+%hdln-prim {
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--light;
+	font-size: em(56px);
+	line-height: (46px / 42px);
+	margin-bottom: em(20px, 42px);
+	color: $text;
+}
+
+%hdln-sec {
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--thin;
+	color: $thirdcolor;
+	font-size: em(36px);
+	letter-spacing: $letter-space;
 }
 
 // Button styles
@@ -44,8 +73,8 @@
 	cursor: pointer;
 	height: em(32px);
 	width: em(32px);
-	fill: $mustard;
+	fill: $blue;
 	&:hover {
-		fill: $mustard;
+		transform: scale(1.2);
 	}
 }

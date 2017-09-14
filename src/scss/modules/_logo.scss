@@ -1,14 +1,1 @@
 //logo
-
-.logo {
-	color: $white;
-	font-size: em(20px);
-	font-weight: $font-weight--ultra-bold;
-	position: relative;
-	@include mq(small) {
-		top: 5px;
-	}
-	@include mq(medium) {
-		top: 13px;
-	}
-}

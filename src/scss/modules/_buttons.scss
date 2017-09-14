@@ -4,11 +4,6 @@
 	@include bg-colors($ui-colors);
 }
 
-.btn--warning,
-.btn--info {
-	margin-bottom: 30px;
-}
-
 [class^="btn--"] {
 	@extend %center-align;
 	@extend %btn;

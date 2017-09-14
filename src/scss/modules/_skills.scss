@@ -1,0 +1,18 @@
+// skills
+
+.skills {
+	@extend %panel-default;
+	& li {
+		text-transform: uppercase;
+		display: inline-block;
+		padding-left: em(15px);
+	}
+}
+
+$colors-list: $brown $blue $pink $yellow $purple;
+@each $current-color in $colors-list {
+	$i: index($colors-list, $current-color);
+	.skills-#{$i} {
+		color: $current-color;
+	}
+}

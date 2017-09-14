@@ -1,0 +1,22 @@
+// headline
+
+.headline {
+	&-primary {
+		@include m(grouped) {
+			@extend %hdln-prim;
+			margin-bottom: 0;
+		}
+
+		@extend %hdln-prim;
+		margin-bottom: em(70px, 24px);
+	}
+	&-secondary {
+		@include m(grouped) {
+			@extend %hdln-sec;
+			margin-bottom: 0;
+		}
+
+		@extend %hdln-sec;
+		margin-bottom: em(20px, 24px);
+	}
+}

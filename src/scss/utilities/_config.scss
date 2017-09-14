@@ -16,9 +16,8 @@ $font-weight--ultra-bold: 900;
 
 //Colors
 $primarycolor: #24252d; //darker black purple
-$secondarycolor: #302d3a; // lighter
-$thirdcolor: #3a3f52; //dark blue
-
+$secondarycolor: #302d3a;
+$thirdcolor: #2d3245; //dark blue
 // Descriptive Base Colors
 
 $white: #fff;
@@ -31,6 +30,8 @@ $red: #c42f2a;
 $text: #cacacc;
 $purple: #7521ff;
 $mustard: #e9bc3f;
+$brown: #e44d26;
+$yellow: #e4ca15;
 
 // Color Palette Modifiers
 
@@ -58,10 +59,10 @@ $palettes: (
 // UI Colors
 
 $ui-colors: (
-	default : $blue,
+	default : $purple,
 	success : $green,
 	error : $pink,
-	info : $purple,
+	info : $blue,
 	caution: $mustard,
 	warning: $red
 );
@@ -70,6 +71,7 @@ $ui-colors: (
 
 $base_font-size: 16px;
 $base_line: 24px;
+$letter-space: 1px;
 
 // Path to Assets
 
@@ -77,7 +79,7 @@ $path--rel: "../img";
 
 // Border radius
 
-$br--default: .4em;
+$br--default: .7em;
 $br--round: 50%;
 
 // Transitions

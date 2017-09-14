@@ -8,40 +8,38 @@
 body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-	font-family: $font-family--primary;
 	font-size: $base_font-size;
 	font-style: normal;
 	font-weight: $font-weight--regular;
 	line-height: ($base_line/$base_font-size);
 	background: $primarycolor;
+	overflow-x: hidden;
 }
 
 h1 {
-	font-weight: $font-weight--light;
-	font-size: em(42px);
-	line-height: (46px / 42px);
-	margin-bottom: em(20px, 42px);
-	font-family: $font-family--secondary;
-	color: $text;
+	@extend %hdln-prim;
 }
+
 h2 {
-	font-family: $font-family--secondary;
-	font-weight: $font-weight--light;
-	font-size: em(36px);
-	color: $text;
+	@extend %hdln-sec;
 }
 h3 {
+	font-family: $font-family--secondary;
+	font-size: em(28px);
+	color: $thirdcolor;
+}
+h4 {
 	font-family: $font-family--primary;
-	font-weight: $font-weight--regular;
+	font-weight: $font-weight--thin;
 	font-size: em(24px);
-	margin: 0;
-	color: $text;
+	color: $thirdcolor;
 }
 p {
-	font-weight: $font-weight--regular;
-	font-size: em(20px);
+	font-family: $font-family--primary;
+	font-weight: $font-weight--thin;
+	font-size: em(18px);
 	line-height: (36px / 24px);
-	color: $text;
+	color: $thirdcolor;
 }
 hr {
 	width: 100%;
@@ -63,7 +61,7 @@ ul {
 }
 
 a {
-	color: $text;
+	color: $green;
 	text-decoration: none;
 	font-weight: $font-weight--medium;
 }
@@ -72,28 +70,16 @@ button a {
 	color: $black;
 }
 
-#blog {
-	padding-top: em(40px);
+main {
+	min-height: calc(100vh - 70px);
 }
 
-article {
-	@media (min-width: 769px) {
-		font-size: em(16px);
-	}
-	font-size: em(18px);
+.section {
+	transition: all 300ms cubic bezier(0.075, 0.820, 0.165, 1.000);
+	transform: translate3d(0, 0, 0);
+	overflow: auto;
 }
 
-blockquote {
-	@media (min-width: 769px) {
-		font-size: em(24px);
-	}
-	font-weight: $font-weight--light;
-	font-style: italic;
-	font-size: em(28px);
-	color: $text;
-	padding: em(20px);
-}
-
-cite {
-	font-weight: $font-weight--bold;
+#skills {
+	background-color: rgba(235, 245, 254, 0.43);
 }

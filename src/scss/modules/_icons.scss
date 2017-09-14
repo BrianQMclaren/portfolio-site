@@ -3,7 +3,24 @@
 svg {
 	@extend %svg--ui;
 }
+
 .social-link {
 	display: inline-block;
 	padding: 0 em(14px);
+}
+
+.icon-embed2 {
+	fill: $purple;
+
+	&:hover {
+		color: $purple;
+	}
+}
+
+.icon-leaf {
+	fill: $green;
+
+	&:hover {
+		color: $green;
+	}
 }
