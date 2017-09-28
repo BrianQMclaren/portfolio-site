@@ -6,6 +6,7 @@
 
 %primary-nav-disp {
 	display: block;
+	padding-top: em(90px);
 }
 
 %primary-nav-link {
@@ -13,7 +14,7 @@
 	margin: 0;
 	position: relative;
 	top: 16px;
-	font-size: em(22px);
+	font-size: em(18px);
 	letter-spacing: 0.05em;
 }
 
@@ -41,7 +42,7 @@
 
 %hdln-sec {
 	font-family: $font-family--secondary;
-	font-weight: $font-weight--thin;
+	font-weight: $font-weight--bold;
 	color: $thirdcolor;
 	font-size: em(36px);
 	letter-spacing: $letter-space;
@@ -50,18 +51,16 @@
 // Button styles
 
 %btn {
-	color: $white;
+	color: $secondarycolor;
+	cursor: pointer;
 	text-transform: uppercase;
 	display: block;
 	margin: 5px;
-	padding: 15px 30px;
+	padding: 15px 50px;
 	border: 0;
-	border-radius: $br--default;
-	font-size: em(14px);
-	font-weight: $font-weight--medium;
-	&:hover {
-		opacity: .75;
-	}
+	font-size: em(16px);
+	font-weight: $font-weight--bold;
+	font-family: $font-family--primary;
 	&:active {
 		opacity: initial;
 	}

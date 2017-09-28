@@ -12,7 +12,6 @@ body {
 	font-style: normal;
 	font-weight: $font-weight--regular;
 	line-height: ($base_line/$base_font-size);
-	background: $primarycolor;
 	overflow-x: hidden;
 }
 
@@ -35,10 +34,9 @@ h4 {
 	color: $thirdcolor;
 }
 p {
-	font-family: $font-family--primary;
-	font-weight: $font-weight--thin;
-	font-size: em(18px);
-	line-height: (36px / 24px);
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: em(20px);
+	line-height: (48px / 24px);
 	color: $thirdcolor;
 }
 hr {
@@ -57,13 +55,17 @@ li,
 ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: $thirdcolor;
+	font-size: em(18px);
 }
 
 a {
 	color: $green;
 	text-decoration: none;
 	font-weight: $font-weight--medium;
+	cursor: pointer;
+	font-family: $font-family--primary;
 }
 
 button a {

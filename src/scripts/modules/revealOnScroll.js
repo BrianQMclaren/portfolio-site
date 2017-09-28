@@ -18,8 +18,8 @@ class revealOnScroll {
 }
 
 $('#fullpage').fullpage({
-  anchors: ['home', 'bio', 'qualifications', 'work', 'info'],
-  sectionsColor: ['$primarycolor', '#fff', '#ebf5fe', '#f4f7fb', '#f6fbff'],
+  anchors: ['home', 'bio', 'qualifications', 'form', 'bookapp', 'quote', 'info'],
+  sectionsColor: ['$primarycolor', '#fff', '#ebf5fe', '#f4f7fb', '#fff', '#f6fbff', '#fff'],
 
   autoScrolling: false,
   fitToSection: false,

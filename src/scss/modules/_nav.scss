@@ -9,7 +9,7 @@
 		}
 		@include mq(medium) {
 			padding: 0 10px;
-			float: right;
+			display: inline-block;
 		}
 		a {
 			@extend %primary-nav-a;
@@ -25,5 +25,10 @@
 				@extend %primary-nav-on;
 			}
 		}
+	}
+}
+ul.primary {
+	@include mq(medium) {
+		float: right;
 	}
 }

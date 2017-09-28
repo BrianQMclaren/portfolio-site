@@ -11,6 +11,7 @@ module.exports = env => ({
     app: './src/app.js',
     vendor: ['babel-polyfill'],
     main: './src/app.js',
+    portfolio: './src/portfolio.js',
   },
   output: {
     filename: env === 'production' ? '[name].[chunkhash].bundle.js' : '[name].bundle.js',
@@ -68,6 +69,10 @@ module.exports = env => ({
     new ExtractTextPlugin('styles.[contenthash].css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'portfolio', 'form.html'),
+      filename: './portfolio/form.html',
     }),
     new CleanWebpackPlugin(['dist']),
     new webpack.optimize.CommonsChunkPlugin({

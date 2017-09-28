@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brian McLaren - Front End Developer - Signupform</title>
+  <script src="https://use.typekit.net/emd3ahg.js"></script>
+  <script>
+  try {
+  Typekit.load({
+    async: true,
+  });
+} catch (e) {}
+</script>
+  <!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-92955948-1', 'auto');
+  ga('send', 'pageview');
+  </script> -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <header role="header">
+      <div class="site-header">
+        <div class="navbar">
+          <div class="grid">
+            <div class="site-header__menu-icon">
+              <div class="site-header__menu-icon__middle"></div>
+            </div>
+            <div class="site-header__menu-content">
+              <div class="background"></div>
+              <div class="grid__col--6">
+                <a class="site-logo" href="#">
+                  <b class="srt">Brian McLaren</b>
+                </a>
+                <span class="logo"></span>
+              </div>
+              <div class="grid__col--6">
+                <nav role="navigation">
+                  <ul class="primary">
+                    <li class="primary__nav"><a href="/">Go Back Home</a></li>
+                    <li class="primary__nav"><a href="#portfolio">All Work</a></li>
+                    <li class="primary__nav"><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview">
+        <div class="grid">
+          <div class="centered grid__col--9">
+            <header>
+              <h1 class="headline-secondary--grouped panel--padded">User Authentication Form</h1>
+                <ul class="lists">
+                  <li class="centered">Role - Front End Developer</li>
+                  <li class="centered">Registration & Login Form</li>
+                  <li class="centered">July 2017</li>
+                </ul>
+              </div>
+            </header>
+        </div>
+      </section>
+      <section id="history">
+        <div class="grid">
+          <div class="centered grid__col--8">
+            <h2 class="headline-secondary--grouped">Project History</h2>
+            <p>As a Front end developer this was my first attempt at building a full stack javascript project. My goal was to create a register & login form that validates, authenticates and stores user input into a database. I was undecided as to make this a full app hence just barebones landing page. I may revist this project in the future.</p>
+            <button class="btn--success" type="button" name="button">Visit Website</button>
+          </div>
+        </div>
+      </section>
+      <section id="stories">
+        <div class="grid">
+          <div class="centered grid__col--8">
+            <h2 class="headline-secondary--grouped">User Stories</h2>
+            <ul>
+              <li>Authentication system validates users when logging in or creating a new account.</li>
+              <li>Separate express.js route for Login Form.</li>
+              <li>Submits to mongoDB database and stores infomation.</li>
+              <li>Hashes and salts passwords to protect user profile security via bcrypt technology.</li>
+              <li>Redirects users to error page when login infomation doesn't match.</li>
+            </ul>
+        </div>
+      </div>
+      </section>
+      <section id="analysis">
+        <div class="grid">
+          <div class="grid__col--6">
+            <h3 class="headline-secondary--grouped">Project Analysis</h3>
+            <ol class="analysis-description">
+              <li>I created this project with javascript technologies such as <strong>Node.js, Express framework, and Ejs</strong> template language. For a database I chose to use <strong>MongoDB</strong> to store user entries while also creating a mongoose schema to structure my document shapes within a collection.</li>
+              <li>I created this project with javascript technologies such as <strong>Node.js, Express framework, and Ejs</strong> template language. For a database I chose to use <strong>MongoDB</strong> to store user entries while also creating a mongoose schema to structure my document shapes within a collection.</li>
+              <li>For my web app to handle state I leverged express sessions to provide each user with a unique session with each login. Which means based on what action a user took on page 1, we will show a different page 2.</li>
+              <li>Finally I implemented security measures to ensure user info is stored safely. Choosing <strong>Bcrypt</strong> to hash and salt passwords once stored in the database created a scrambled string from the original password. Therefore hackers cannot unhack the password which ensures users infomation is secure.</li>
+            </ol>
+
+          </div>
+          <div class="grid__col--6">
+            image
+          </div>
+        </div>
+      </section>
+
+      <footer class="grid next-work">
+        <div class=" grid__col--12 ">
+          <p>Next Project</p>
+          <a href="/">Book Club</a>
+       </div>
+      </footer>
+
+    </main>
+
+
+
+
+  </div>
+  <!-- end wrapper -->
+</body>
+
+</html>

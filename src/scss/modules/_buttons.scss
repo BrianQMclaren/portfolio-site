@@ -12,6 +12,20 @@
 	}
 	@media (min-width: 769px) {
 		width: auto;
-		display: inline-block;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.btn--default {
+	display: inline-block;
+}
+
+.btn--success {
+	box-shadow: 0 20px 15px -15px rgba(0, 0, 0, .2);
+	transition: box-shadow 200ms ease;
+	&:hover {
+		transform: scale(1.1);
+		box-shadow: 0 25px 15px -15px rgba(0, 0, 0, .2);
 	}
 }

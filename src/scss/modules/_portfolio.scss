@@ -1,0 +1,65 @@
+// portfolio
+
+#overview,
+#history,
+#stories
+#analysis {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#history,
+#stories {
+	background-color: rgba(235, 245, 254, 0.43);
+}
+
+#stories {
+	padding-bottom: em(60px);
+	h2 {
+		margin-top: 0;
+	}
+}
+
+#technologies {
+	background: #f4f7fb;
+}
+#analysis {
+	background: palette(grey, xx-light);
+}
+
+.lists {
+	@include mq(small) {
+		li {
+			display: block;
+		}
+	}
+	@include mq(medium) {
+		display: flex;
+		li {
+			padding: 0 em(10px);
+		}
+	}
+}
+
+.analysis-description {
+	line-height: (48px / 24px);
+	color: $thirdcolor;
+	font-size: em(18px);
+	padding-left: 0;
+	li {
+		margin-top: em(10px);
+	}
+}
+
+.next-work {
+	padding: 45px 0;
+
+	a {
+		font-family: $font-family--primary;
+		font-size: em(36px);
+		display: flex;
+		align-items: center;
+	}
+}

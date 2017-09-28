@@ -13,6 +13,7 @@
 	&-secondary {
 		@include m(grouped) {
 			@extend %hdln-sec;
+			@extend %center-align;
 			margin-bottom: 0;
 		}
 
