@@ -74,6 +74,10 @@ module.exports = env => ({
       template: path.join(__dirname, 'portfolio', 'form.html'),
       filename: './portfolio/form.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'portfolio', 'bookclub.html'),
+      filename: './portfolio/bookclub.html',
+    }),
     new CleanWebpackPlugin(['dist']),
     new webpack.optimize.CommonsChunkPlugin({
       name: ['vendor', 'manifest'],
