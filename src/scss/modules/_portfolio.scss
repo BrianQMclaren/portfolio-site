@@ -27,9 +27,18 @@
 }
 #analysis {
 	background: palette(grey, xx-light);
+	min-height: 768px;
+}
+
+#redesign {
+	padding: 2.5em;
 }
 
 .lists {
+	li {
+		color: $white;
+		font-weight: $font-weight--medium;
+	}
 	@include mq(small) {
 		li {
 			display: block;
@@ -64,6 +73,23 @@
 	}
 }
 
+.hero {
+	background: $primarycolor;
+	@include img-replace('./header-bg.jpg');
+	width: 100%;
+	background-size: 100% 100%;
+	height: auto;
+}
+
+.photo {
+	padding: 2em;
+}
+
 .form {
-	background-image: url('./signup-516x695.jpg', '516px', '695px');
+	@include img-replace('./signup.png');
+	height: 768px;
+	width: 768px;
+	position: relative;
+	right: 7em;
+	top: 2.5em;
 }

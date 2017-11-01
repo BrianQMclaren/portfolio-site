@@ -20,4 +20,12 @@
 		@extend %hdln-sec;
 		margin-bottom: em(20px, 24px);
 	}
+	&-third {
+		@include m(grouped) {
+			@extend %hdln-third;
+			@extend %center-align;
+		}
+		@extend %hdln-sec;
+		margin-bottom: em(10px, 18px);
+	}
 }

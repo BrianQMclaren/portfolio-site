@@ -48,6 +48,14 @@
 	letter-spacing: $letter-space;
 }
 
+%hdln-third {
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--bold;
+	color: $white;
+	font-size: em(56px);
+	line-height: (46px / 42px);
+}
+
 // Button styles
 
 %btn {

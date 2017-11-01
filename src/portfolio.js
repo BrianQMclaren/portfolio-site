@@ -1,1 +1,1 @@
-console.log('Hello project page');
+import styles from './scss/main.scss';
