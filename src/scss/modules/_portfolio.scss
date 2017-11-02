@@ -62,34 +62,10 @@
 	}
 }
 
-.next-work {
-	padding: 45px 0;
-
-	a {
-		font-family: $font-family--primary;
-		font-size: em(36px);
-		display: flex;
-		align-items: center;
-	}
-}
-
 .hero {
 	background: $primarycolor;
-	@include img-replace('./header-bg.jpg');
-	width: 100%;
-	background-size: 100% 100%;
-	height: auto;
 }
 
 .photo {
 	padding: 2em;
-}
-
-.form {
-	@include img-replace('./signup.png');
-	height: 768px;
-	width: 768px;
-	position: relative;
-	right: 7em;
-	top: 2.5em;
 }

@@ -56,11 +56,11 @@
     </header>
 
     <main>
-      <section id="overview">
+      <section id="overview" class="hero">
         <div class="grid">
           <div class="centered grid__col--9">
             <header>
-              <h1 class="headline-secondary--grouped panel--padded">User Authentication Form</h1>
+              <h1 class="headline-third--grouped panel--padded">User Authentication Form</h1>
                 <ul class="lists">
                   <li class="centered">Role - Front End Developer</li>
                   <li class="centered">Registration & Login Form</li>
@@ -75,6 +75,8 @@
           <div class="centered grid__col--8">
             <h2 class="headline-secondary--grouped">Project History</h2>
             <p>As a Front end developer this was my first attempt at building a full stack javascript project. My goal was to create a register & login form that validates, authenticates and stores user input into a database. I was undecided as to make this a full app hence just barebones landing page. I may revist this project in the future.</p>
+            <h3>Technologies Used</h3>
+            <p>Express, Node, EJS, MongoDB, ES6</p>
             <button class="btn--success" type="button" name="button">Visit Website</button>
           </div>
         </div>
@@ -99,14 +101,13 @@
             <h3 class="headline-secondary--grouped">Project Analysis</h3>
             <ol class="analysis-description">
               <li>I created this project with javascript technologies such as <strong>Node.js, Express framework, and Ejs</strong> template language. For a database I chose to use <strong>MongoDB</strong> to store user entries while also creating a mongoose schema to structure my document shapes within a collection.</li>
-              <li>I created this project with javascript technologies such as <strong>Node.js, Express framework, and Ejs</strong> template language. For a database I chose to use <strong>MongoDB</strong> to store user entries while also creating a mongoose schema to structure my document shapes within a collection.</li>
               <li>For my web app to handle state I leverged express sessions to provide each user with a unique session with each login. Which means based on what action a user took on page 1, we will show a different page 2.</li>
               <li>Finally I implemented security measures to ensure user info is stored safely. Choosing <strong>Bcrypt</strong> to hash and salt passwords once stored in the database created a scrambled string from the original password. Therefore hackers cannot unhack the password which ensures users infomation is secure.</li>
             </ol>
 
           </div>
           <div class="grid__col--6">
-            <div class="form"></div>
+            <img src="/src/img/signup.png" alt="sign up form">
           </div>
         </div>
       </section>
@@ -119,9 +120,6 @@
       </footer>
 
     </main>
-
-
-
 
   </div>
   <!-- end wrapper -->

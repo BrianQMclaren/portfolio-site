@@ -17,11 +17,8 @@
 	}
 }
 
+.btn--success,
 .btn--default {
-	display: inline-block;
-}
-
-.btn--success {
 	box-shadow: 0 20px 15px -15px rgba(0, 0, 0, .2);
 	transition: box-shadow 200ms ease;
 	&:hover {
