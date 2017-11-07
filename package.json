@@ -5,6 +5,7 @@
 	"main": "app.js",
 	"scripts": {
 		"build": "./node_modules/.bin/webpack -p --env production",
+		"server": "NODE_ENV=production node server.js",
 		"start": "./node_modules/.bin/webpack-dev-server --open",
 		"start-production": "./node_modules/.bin/webpack-dev-server --env production --open",
 		"format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.js\"",
@@ -15,11 +16,15 @@
 	"license": "ISC",
 	"dependencies": {
 		"babel-polyfill": "^6.26.0",
+		"express": "^4.16.2",
 		"fullpage.js": "^2.9.4",
 		"http": "^0.0.0",
 		"jquery": "^3.2.1",
 		"lodash": "^4.17.4",
-		"normalize.css": "^7.0.0"
+		"nodemon": "^1.12.1",
+		"normalize.css": "^7.0.0",
+		"webpack-dev-middleware": "^1.12.0",
+		"webpack-hot-middleware": "^2.20.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^7.1.3",
