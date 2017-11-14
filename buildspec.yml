@@ -1,0 +1,19 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - yarn server
+artifacts:
+  files:
+    - public/*
+    - portfolio/*
+    - src/**/*
+    - .babelrc
+    - .eslintrc.json
+    - .editorconfig
+    - package.json
+    - postcss.config.js
+    - server.js
+    - webpack.config.js
+    - yarn.lock
