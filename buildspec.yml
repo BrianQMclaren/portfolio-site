@@ -3,7 +3,7 @@ version: 0.1
 phases:
   build:
     commands:
-      echo Not found
+      echo Not ready yet
 artifacts:
   files:
     - public/*
@@ -17,3 +17,4 @@ artifacts:
     - server.js
     - webpack.config.js
     - yarn.lock
+    - upload-portfolio-lambda.py
