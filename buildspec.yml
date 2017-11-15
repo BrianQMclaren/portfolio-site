@@ -3,8 +3,7 @@ version: 0.1
 phases:
   build:
     commands:
-      - yarn
-      - yarn server
+      echo Not found
 artifacts:
   files:
     - public/*
