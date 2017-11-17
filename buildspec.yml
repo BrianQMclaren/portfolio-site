@@ -4,7 +4,7 @@ phases:
   build:
     commands:
      - npm install
-     - npm run build
+     - npm run server
 
 artifacts:
   files:
@@ -27,5 +27,5 @@ artifacts:
     - dist/main.bundle.js
     - dist/manifest.bundle.js
     - dist/portfolio.bundle.js
-    - dist/styles.[contenthash].css
+    - dist/styles./*.css
     - dist/vendor.bundle.js
