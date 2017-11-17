@@ -4,11 +4,11 @@ phases:
   build:
     commands:
      - npm install
-     - npm run server
+     - npm run build
 
 artifacts:
   files:
-    - public/*
+    - public/**/*
     - portfolio/*
     - src/**/*
     - .babelrc
@@ -20,12 +20,3 @@ artifacts:
     - webpack.config.js
     - yarn.lock
     - upload-portfolio-lambda.py
-    - dist/portfolio/bookclub.html
-    - dist/portfolio/form.html
-    - dist/app.bundle.js
-    - dist/index.html
-    - dist/main.bundle.js
-    - dist/manifest.bundle.js
-    - dist/portfolio.bundle.js
-    - dist/styles./*.css
-    - dist/vendor.bundle.js
