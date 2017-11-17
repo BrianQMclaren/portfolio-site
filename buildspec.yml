@@ -20,10 +20,12 @@ artifacts:
     - webpack.config.js
     - yarn.lock
     - upload-portfolio-lambda.py
-    - dist/portfolio/app.bundle.js
-    - dist/portfolio/index.html
-    - dist/portfolio/main.bundle.js
-    - dist/portfolio/manifest.bundle.js
-    - dist/portfolio/portfolio.bundle.js
-    - dist/portfolio/styles.[contenthash].css
-    - dist/portfolio/vendor.bundle.js
+    - dist/portfolio/bookclub.html
+    - dist/portfolio/form.html
+    - dist/app.bundle.js
+    - dist/index.html
+    - dist/main.bundle.js
+    - dist/manifest.bundle.js
+    - dist/portfolio.bundle.js
+    - dist/styles.[contenthash].css
+    - dist/vendor.bundle.js
