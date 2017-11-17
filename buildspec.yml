@@ -3,7 +3,9 @@ version: 0.1
 phases:
   build:
     commands:
-      echo Not ready yet
+     - yarn
+     - yarn build
+
 artifacts:
   files:
     - public/*
@@ -18,3 +20,10 @@ artifacts:
     - webpack.config.js
     - yarn.lock
     - upload-portfolio-lambda.py
+    - dist/portfolio/app.bundle.js
+    - dist/portfolio/index.html
+    - dist/portfolio/main.bundle.js
+    - dist/portfolio/manifest.bundle.js
+    - dist/portfolio/portfolio.bundle.js
+    - dist/portfolio/styles.[contenthash].css
+    - dist/portfolio/vendor.bundle.js
