@@ -8,6 +8,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 app.use('/public', express.static('./public'));
 
+
 if (process.env.NODE_ENV === 'development') {
   const compiler = webpack(config);
   app.use(

@@ -1,1 +1,1 @@
-console.log('portfolio page');
+import styles from './scss/main.scss';
