@@ -9,7 +9,6 @@ phases:
 artifacts:
   files:
     - public/**/*
-    - portfolio/*
     - src/**/*
     - .babelrc
     - .eslintrc.json
