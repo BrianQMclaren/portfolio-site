@@ -12,8 +12,8 @@ const config = {
   entry: {
     app: './src/app.js',
     vendor: ['babel-polyfill'],
-    main: './src/app.js',
-    portfolio: './src/portfolio.js'
+    form: './src/form.js',
+    bookclub: './src/bookclub.js'
   },
   output: {
     filename:
@@ -24,7 +24,7 @@ const config = {
     publicPath: '/public/'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css']
+    extensions: ['.js', '.jsx', '.json']
   },
   module: {
     rules: [
@@ -66,6 +66,27 @@ const config = {
         options: {
           limit: 10000
         }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            minimize: true,
+            removeComments: false,
+            collapseWhitespace: false
+          }
+        }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        },
+        exclude: path.resolve(__dirname, 'public/index.html')
       }
     ]
   },
@@ -77,14 +98,6 @@ const config = {
     new ExtractTextPlugin('styles.[contenthash].css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html')
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'portfolio', 'form.html'),
-      filename: './portfolio/form.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'portfolio', 'bookclub.html'),
-      filename: './portfolio/bookclub.html'
     }),
     new CleanWebpackPlugin(['dist']),
     new webpack.optimize.CommonsChunkPlugin({
