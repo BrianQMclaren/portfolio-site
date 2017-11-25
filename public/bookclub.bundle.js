@@ -1,1 +1,1 @@
-webpackJsonp([3],{338:function(o,c,e){"use strict";e(339);var t=e(46);!function(o){o&&o.__esModule}(t),console.log("This the bookclub page")},339:function(o,c){o.exports='module.exports = __webpack_public_path__ + "bookclub.html";'},46:function(o,c){}},[338]);
+webpackJsonp([3],{337:function(n,c,o){"use strict";var t=o(49);!function(n){n&&n.__esModule}(t)},49:function(n,c){}},[337]);

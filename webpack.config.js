@@ -10,8 +10,8 @@ const config = {
   devtool:
     process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
   entry: {
-    app: './src/app.js',
     vendor: ['babel-polyfill'],
+    app: './src/app.js',
     form: './src/form.js',
     bookclub: './src/bookclub.js'
   },
@@ -77,16 +77,6 @@ const config = {
             collapseWhitespace: false
           }
         }
-      },
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]'
-          }
-        },
-        exclude: path.resolve(__dirname, 'public/index.html')
       }
     ]
   },
@@ -95,7 +85,7 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new ExtractTextPlugin('styles.[contenthash].css'),
+    new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html')
     }),
