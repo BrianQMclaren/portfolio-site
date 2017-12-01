@@ -4,6 +4,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   context: __dirname,
@@ -11,17 +12,14 @@ const config = {
     process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
   entry: {
     vendor: ['babel-polyfill'],
-    app: './src/app.js',
-    form: './src/form.js',
-    bookclub: './src/bookclub.js'
+    app: './src/scripts/app.js'
   },
   output: {
     filename:
       process.env.NODE_ENV === 'production'
         ? '[name].[chunkhash].bundle.js'
         : '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/public/'
+    path: path.resolve(__dirname, 'public')
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -61,22 +59,37 @@ const config = {
         }
       },
       {
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000
-        }
+        test: /\.(jpg|png|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/'
+            }
+          }
+        ]
       },
       {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            minimize: true,
-            removeComments: false,
-            collapseWhitespace: false
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: false,
+              removeComments: false,
+              collapseWhitespace: false
+            }
           }
-        }
+        ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        },
+        exclude: path.resolve(__dirname, 'src/index.html')
       }
     ]
   },
@@ -87,9 +100,11 @@ const config = {
     }),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'public', 'index.html')
+      template: path.join(__dirname, 'src', 'index.html'),
+      chunks: ['vendor', 'manifest', 'app']
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['public']),
+    new CopyWebpackPlugin([{ from: 'src/img', to: 'img' }]),
     new webpack.optimize.CommonsChunkPlugin({
       name: ['vendor', 'manifest'],
       minChunks: Infinity
