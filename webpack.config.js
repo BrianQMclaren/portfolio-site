@@ -19,7 +19,8 @@ const config = {
       process.env.NODE_ENV === 'production'
         ? '[name].[chunkhash].bundle.js'
         : '[name].bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
