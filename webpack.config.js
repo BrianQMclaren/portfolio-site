@@ -20,7 +20,7 @@ const config = {
         ? '[name].[chunkhash].bundle.js'
         : '[name].bundle.js',
     path: path.resolve(__dirname, 'public'),
-    publicPath: '../'
+    publicPath: '/public/'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
