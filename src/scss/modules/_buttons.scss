@@ -9,6 +9,7 @@
 	@extend %btn;
 	@media (min-width: 1px) and (max-width: 768px) {
 		width: 100%;
+    cursor: pointer;
 	}
 	@media (min-width: 769px) {
 		width: auto;

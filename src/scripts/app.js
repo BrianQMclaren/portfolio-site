@@ -1,9 +1,10 @@
-import styles from '../scss/main.scss';
+import style from '../scss/main.scss';
 import '../bookclub.html';
 import '../form.html';
+import '../realestate.html';
 
-import mobileMenu from './modules/mobileMenu';
-import revealOnScroll from './modules/revealOnScroll';
+import MobileMenu from './modules/mobileMenu';
+import RevealOnScroll from './modules/revealOnScroll';
 
-const menu = new mobileMenu();
-const revealScroll = new revealOnScroll();
+const menu = new MobileMenu();
+const revealScroll = new RevealOnScroll();

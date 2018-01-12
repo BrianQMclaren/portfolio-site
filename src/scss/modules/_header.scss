@@ -16,6 +16,12 @@
 		background: $secondarycolor;
 		height: 100%;
 	}
+
+  &--hide-background {
+    opacity: 0;
+  }
+
+
 }
 
 .site-header__menu-icon {

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import fullpage from 'fullpage.js';
 
-class revealOnScroll {
+class RevealOnScroll {
   constructor() {
     this.body = $('body');
     this.hideInitially();
@@ -36,4 +36,4 @@ $('#fullpage').fullpage({
   },
 });
 
-export default revealOnScroll;
+export default RevealOnScroll;
