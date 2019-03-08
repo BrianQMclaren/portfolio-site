@@ -36,8 +36,13 @@ def lambda_handler(event, context):
         with zipfile.ZipFile(portfolio_zip) as myzip:
             for nm in myzip.namelist():
                 obj = myzip.open(nm)
-                portfolio_bucket.upload_fileobj(
-                    obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
+                mimetype = mimetypes.guess_type(nm)[0]
+                if mimetype is None:
+                    portfolio_bucket.upload_fileobj(
+                        obj, nm)
+                else:
+                    portfolio_bucket.upload_fileobj(
+                        obj, nm, ExtraArgs={'ContentType': mimetype})
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
 
         print ('Job Done!')
