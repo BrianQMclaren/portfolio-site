@@ -1,27 +1,24 @@
 //landing
 
 .landing {
-	width: 100vw;
-	p {
-		color: $text;
-	}
-	@extend %panel-default;
-	@include mq(small) {
-		header {
-			max-width: 90%;
-		}
-	}
-	@include mq(medium) {
-		transform: translateX(-38em);
-	}
+  width: 100vw;
+  p {
+    color: $text;
+  }
+  @extend %panel-default;
+  @include mq(small) {
+    header {
+      max-width: 90%;
+    }
+  }
 }
 
 .home {
-	background-color: $primarycolor;
+  background-color: $primarycolor;
 }
 
 // Title
 
 .title {
-	color: $blue;
+  color: $blue;
 }

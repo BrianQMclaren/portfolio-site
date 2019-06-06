@@ -1,17 +1,30 @@
 // Grid container
 
 .grid {
-	@extend %clearfix;
-	@extend .centered;
-	width: 90%;
+  @extend %clearfix;
+  @extend .centered;
+  width: 90%;
 
-	// make nested grid 100%
-	[class*="grid__col--"] > & {
-		width: 100%;
-	}
+  // make nested grid 100%
+  [class*="grid__col--"] > & {
+    width: 100%;
+  }
 
-	// Set a max-width for grid container
-	@media (min-width: 1100px) {
-		max-width: $g-cont-max-w;
-	}
+  // // Set a max-width for grid container
+  // @media (min-width: 1100px) {
+  // 	max-width: $g-cont-max-w;
+  // }
+
+  @include mq(large) {
+    margin: 0 4%;
+  }
+  @include mq(xlarge) {
+    margin: 0 8%;
+  }
+  @include mq(xxlarge) {
+    margin: 0 12%;
+  }
+  @include mq(xxxlarge) {
+    margin: 0 18%;
+  }
 }
