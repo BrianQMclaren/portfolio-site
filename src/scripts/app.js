@@ -1,6 +1,5 @@
 import style from "../scss/main.scss";
 import "../bookclub.html";
-import "../form.html";
 import "../realestate.html";
 import "../unibank.html";
 
