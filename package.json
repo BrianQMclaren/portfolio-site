@@ -7,10 +7,8 @@
     "build": "./node_modules/.bin/webpack -p --env production",
     "server": "NODE_ENV=production node server.js",
     "start": "./node_modules/.bin/webpack-dev-server --open",
-    "start-production":
-      "./node_modules/.bin/webpack-dev-server --env production --open",
-    "format":
-      "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.js\"",
+    "start-production": "./node_modules/.bin/webpack-dev-server --env production --open",
+    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.js\"",
     "lint": "eslint **/*.js --quiet",
     "watch": "webpack --watch"
   },
@@ -18,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "emailjs-com": "^2.6.4",
     "express": "^4.16.2",
     "fullpage.js": "^2.9.4",
     "http": "^0.0.0",
@@ -48,7 +47,7 @@
     "file-loader": "^0.11.2",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^5.0.0",
     "postcss-loader": "^2.0.6",
     "prettier": "^1.7.4",
     "sass-loader": "^6.0.6",

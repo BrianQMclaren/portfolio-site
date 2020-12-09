@@ -1,0 +1,40 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
+    label {
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        outline: none;
+        border: 0;
+        color: #302d3a;
+        background-color: $purple;
+        box-shadow: 0 20px 15px -15px rgba(0,0,0,.2);
+        transition: box-shadow .2s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1em;
+        font-family: $font-family--primary;
+        padding: 20px 15px;
+        border-radius: 3px;
+
+        &:hover {
+            transform: scale(1.005);
+            box-shadow: 0 25px 15px -15px rgba(0,0,0,.2);
+        }
+     }
+
+     textarea[name="message"] {
+        margin-bottom: 30px;
+    }
+}
+.contact-form input, .contact-form textarea {
+    padding: 15px 15px;
+    margin: 5px 0 20px;
+    outline: #f8f8f8;
+}

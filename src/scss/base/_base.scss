@@ -50,6 +50,9 @@ p {
   line-height: (48px / 24px);
   color: $thirdcolor;
 }
+label {
+  font-family: $font-family--primary;
+}
 hr {
   width: 100%;
   height: 1px;
